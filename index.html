@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TO-DO</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css?ver=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/e3ae05b8e6.js"></script>
+    <script>
+        document.write(
+            '<link rel="stylesheet" href="style.css' + new Date().getTime() + '">'
+        );
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <h1 class="title">トゥードゥ</h1>
+        </header>
+
+        <div id="open_inputArea"></div>
+
+        <div class="searchBox">
+            <i class="fa fa-search searchBox__icon" aria-hidden="true"></i>
+            <input type="text" class="searchBox__input js-search" value="" placeholder="絞り込みたいキーワードを入力">
+        </div>
+
+        <ul class="list js-todo_list">
+            <li class="list__item js-todo_list-item" data-text="サンプルTODOタスク">
+                <i class="fa fa-lg fa-square-o icon-check js-click-done" aria-hidden="true"></i>
+                <span class="js-todo_list-text">ゴミ箱を押して消去</span>
+                <input type="text" class="editText js-todo_list-editForm" value="ゴミ箱を押して消去">
+                <i class="fa fa-lg fa-trash icon-trash js-click-trash" aria-hidden="true"></i>
+            </li>
+            <li class="list__item js-todo_list-item" data-text="サンプルTODOタスク">
+                <i class="fa fa-lg fa-square-o icon-check js-click-done" aria-hidden="true"></i>
+                <span class="js-todo_list-text">テキストを押して編集</span>
+                <input type="text" class="editText js-todo_list-editForm" value="テキストを押して編集">
+                <i class="fa fa-lg fa-trash icon-trash js-click-trash" aria-hidden="true"></i>
+            </li>
+        </ul>
+        <div class="input-container">
+            <div class="inputArea">
+                <span class="error js-toggle-error">入力が空です</span>
+                <input type="text" class="inputText js-get-val" placeholder="予定を記入して「＋」">
+                <div class="btn js-add-todo">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <script src="script.js?ver=1.0"></script>
+        <script>
+            document.write(
+                '<script src="script.js' + new Date().getTime() + '"><\/script>'
+            );
+        </script>
+</body></html>
